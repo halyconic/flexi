@@ -1,14 +1,17 @@
-language should target an infinite register machine with minimal instructions    
-no arithmetic, use church numerals  
+#Axioms
+Infinite register machine  
+Minimal instruction set (4 or so instructions)
+Church data representation
+Intensional equality of AST
 
-equality at the lowest level of the language is intensional - ie, two objects are equal if they have the exact same AST representation  
+#Optimization
 
-This poses a problem when we want to optimize register operations on a real machine, which has fast arithmetic operators  
+What happens we want to optimize register operations on a real machine, which has fast arithmetic operators? We want to expand the instruction set.  
 
 We need to be able to support alternate representations of objects (such as numbers)  
 
 3 can be represented in registers as:  
-R1 -> R2 -> R2 -> 0 (church numeric expression)  
+R1 -> R2 -> R3 -> 0 (church numeric expression)  
 R1 -> 3 (arithmetic expression)  
 
 Our optimizer must be able to convert from a church numeric expression to an arithmetic expression when appropriate  
