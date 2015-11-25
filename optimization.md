@@ -1,8 +1,8 @@
 #Axioms
 Infinite register machine  
-Minimal instruction set (4 or so instructions)
-Church data representation
-Intensional equality of AST
+Minimal instruction set (4 or so instructions)  
+Church data representation  
+Intensional equality of AST  
 
 #Optimization
 
