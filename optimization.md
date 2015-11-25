@@ -22,4 +22,9 @@ In the optimizer, we override the concept of equality to be extensional with reg
 
 The sum type for numbers would be (NumberRepresentation, Value). The sumtype would carry a conversion method between "church numeric expression" and "arithmetic expression"  
 
-two number expressions would be equal if they possess extensional equality
+two number expressions would be equal if they possess extensional equality  
+
+#References
+https://en.wikipedia.org/wiki/Counter_machine_models
+https://en.wikipedia.org/wiki/Church_encoding
+https://en.wikipedia.org/wiki/Extensionality
